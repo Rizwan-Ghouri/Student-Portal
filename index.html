@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="continer">
+      <div class="form_continer">
+        <form action="" class="form" id="form">
+          <h1 class="form_heading">Student Portal</h1>
+          <input type="text" class="input_text" id="name" placeholder="Enter your Name">
+          <br />
+          <br />
+          <input type="text" class="input_text" id="F.name" placeholder="Enter your Father Name">
+          <br />
+          <br />
+          <input type="number" class="input_text" id="Age" placeholder="Enter your Age">
+          <br />
+          <br />
+          <input type="email" class="input_text" id="Email" placeholder="Enter your Email">
+          <br />
+          <br />
+          <select class="input_dropdown"  name="" id="Course">
+            <option disabled selected>Select a Course</option>
+            <option >Web & Mobail Devolopment</option>
+            <option >Machine learning</option>
+            <option >AI Chatbot</option>
+            <option >Python</option>
+          </select>
+          <br />
+          <br />
+         <button class="form_btn_submit" id="btnsubmit">Submit</button>
+          <!-- <input class="form_btn_reset"  type="reset" value="Clear"> -->
+        </form>
+      </div>
+      <div class="table_continer">
+        <table class="tbl">
+          <thead class="tbl_head">
+            <tr>
+              <th>S.No</th>
+              <th>Roll Number</th>
+              <th>Name</th>
+              <th>Father Name</th>
+              <th>Age</th>
+              <th>Email</th>
+              <th>Course</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody class="tbl_body" id="tblbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.3/sweetalert2.all.js" integrity="sha512-ch8WSvHL/CKOt82FEwjcjYN5LyzX6Na2l4pdFPzTkVlWsvpkncRn3S/Ih2iIT66XfLCalZqmOb3SqRLwm2v/qA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
