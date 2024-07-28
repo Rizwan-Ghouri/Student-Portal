@@ -1,14 +1,14 @@
-/* -----------continer Design--------- */
+/** -----------continer Design--------- */
 .continer{
     width: 100%;
     padding: 1px;
     display: flex;
     /* border: 3px solid red; */
 }
-/* -----------Form Design--------- */
+/** -----------Form Design--------- */
 .form_continer{
     width: 30%;
-    height: 41rem;
+    height: 37.1rem;
     padding: 1%;
     margin: 1px;
     background-color: #03586d;
@@ -78,9 +78,13 @@
     letter-spacing: 1px;
     color: #fff;
     background-color: transparent;
-    border:  3px solid #fff;
+    border:  0.5px solid #fff;
     border-radius: 10px;
-    box-shadow: 0px 5px 1px red;
+    box-shadow: 0px 5px 1px #ffff74;
+    border-bottom:  4px solid rgb(0, 0, 0);
+    cursor: pointer;
+
+
 }
 .form_btn_submit:hover{
     color: white;
@@ -91,17 +95,29 @@
 
 }
 
-/* -----------Table Design--------- */
+/** -----------Table Design--------- */
 .table_continer{
     width: 70%;
-    height: auto;
+    height: 37.1rem;
     padding: 1%;
     margin: 1px; 
     /* border: 1px solid #0400ff; */
     border-radius: 10px;
     background-color: #03586d;
-    
+    overflow: scroll;
 }
+.table_continer::-webkit-scrollbar{
+    overflow: hidden;
+    background-color: #03586d;
+}
+.table_continer::-webkit-scrollbar-thumb{
+    /* overflow: hidden; */
+    background-color: #f3e958;
+}
+.table_continer::-webkit-scrollbar-corner{
+    overflow: hidden;
+}
+
 .tbl{
     width: 100%;
     height: auto;
@@ -118,4 +134,23 @@
 .tbl_body{
     color: #fff;
     background-color: #ffff7427;
+}
+td{
+    padding: 5px 0px;
+}
+/** --------Dom-btn-------- */
+.btnEdit{
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    background-color: gold;
+    cursor: pointer;
+}
+.btnDel{
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    color: white;
+    background-color: red;
+    cursor: pointer;
 }
