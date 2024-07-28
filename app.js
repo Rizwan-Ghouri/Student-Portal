@@ -22,9 +22,18 @@ btnSubmit.addEventListener("click",()=>{
       }
       storestdData.push(objstdData)
       localStorage.setItem(`storeData`,JSON.stringify(storestdData))
-      alert('Sucsses')
+      Swal.fire({
+         title: "Good job!",
+         text: "Submit form successfully!",
+         icon: "success"
+       });
    }else{
-      alert('input filled')
+      Swal.fire({
+      icon: "error",
+      // title: "Oops...",
+      text: "Please input filled!",
+      });
+
    }
    tblBody.innerHTML += `<tr id=tr">
               <td>${objstdData.userSireal}</td>
